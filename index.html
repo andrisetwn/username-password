@@ -1,0 +1,17 @@
+<!<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pattern</title>
+</head>
+    
+<form onSubmit="alert('Submitted.');return false;">
+	 <input type="text" required placeholder="username"
+    pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{7,20}$" title="8 Character"/> 
+	<input type="password" required placeholder="Password"
+	pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+	title="8 Character. Use Uppercase, Lowercase and Number"/>
+	<input type="submit" value="Login"/>
+	</form>
+</html>
